@@ -80,7 +80,6 @@ void onReceive(int len){
     Serial.println(send_val);
 
     pCharacteristic->notify();
-    pCharacteristic->
     delay(50); // bluetooth stack will go into congestion, if too many packets are sent, in 6 hours test i was able to go as low as 3ms
   }
 
