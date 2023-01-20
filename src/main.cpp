@@ -135,6 +135,7 @@ void setup()
   Wire.onReceive(onReceive);
   Wire.onRequest(onRequest);
   Wire.begin((uint8_t)I2C_DEV_ADDR);
+ 
 
   #if CONFIG_IDF_TARGET_ESP32
     char message[64];
